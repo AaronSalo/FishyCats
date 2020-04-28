@@ -14,15 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Cat.cs
-    - Assets/Cat.cs.meta
-    - Assets/Sprites.meta
-    - Assets/Sprites/Misc.meta
-    - Assets/Sprites/Misc/whitePixel.png
-    - Assets/Sprites/Misc/whitePixel.png.meta
+    - Assets/Scripts/Barrel.cs
     - 
-    m_Values: 00000000000000
-  RevisionSummary: 
+    m_Values: 0101
+  RevisionSummary: Cat catches fish and can empty them into the bucket
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
