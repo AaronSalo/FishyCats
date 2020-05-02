@@ -9,7 +9,7 @@ public class Barrel : MonoBehaviour
     [SerializeField] int numFishInBarrel = 0;
     [SerializeField] GameObject[] barrel;
 
-    [SerializeField] GameObject barrelFullNotif;
+    [SerializeField] GameObject barrelFullNotif = null;
 
     // Start is called before the first frame update
     void Start()
