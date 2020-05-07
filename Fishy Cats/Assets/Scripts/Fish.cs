@@ -25,15 +25,15 @@ public class Fish : MonoBehaviour
     //generate the statistics for a fish. Really should only be done once
     public void generateStats() {
         //generate weight
-        weight = Random.Range((float) weightMin, (float) weightMax); //get the next catch time
+        this.weight = Random.Range((float) weightMin, (float) weightMax); //get the next catch time
         //generate length
-        length = Random.Range((float) lengthMin, (float) lengthMax); //get the next catch time
-        value = (weight*weightMult + length*lengthMult) * (4* (rarity-1) );
+        this.length = Random.Range((float) lengthMin, (float) lengthMax); //get the next catch time
+        this.value = (this.weight*weightMult + this.length*lengthMult) * this.rarity;
     }//generate stats
 
     //set this fish to another fish
     public void setupFish(Fish otherFish) {
-        this.name = otherFish.getName();
+        this.fishName = otherFish.getName();
         this.rarity = otherFish.getRarity();
         this.value = otherFish.getValue();
         this.weight = otherFish.getWeight();

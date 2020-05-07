@@ -27,6 +27,7 @@ public class Cat : MonoBehaviour
     private GameObject[] rarity3Fish;
     private GameObject[] rarity4Fish;
     private GameObject[] rarity5Fish;
+    [SerializeField] private Vector3 fishSpawn; //place to spawn the fish off screen
 
     [Header("Button Logistics")]
     [SerializeField] GameObject emptyButtonPrefab;
@@ -154,7 +155,7 @@ public class Cat : MonoBehaviour
         
         fish.GetComponent<Fish>().generateStats();
         //Debug.Log("got fish at index " + rand + " and got a " + fish.GetComponent<Fish>().getName());   
-        return fish;
+        return Instantiate(fish, fishSpawn, fish.transform.rotation); //instantiate to create a new fish
     }//fishery
 
 

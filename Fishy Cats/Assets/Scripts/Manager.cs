@@ -17,6 +17,7 @@ public class Manager : MonoBehaviour
 
     //FISH INSPECTOR DETAILS
     private GameObject fishInspector;
+    private GameObject fishInInspector; //the fish being inspected
     private Text fishNameUI;
     private Image fishInspectorImage;
     private GameObject fishInspectorDetails;
@@ -41,7 +42,7 @@ public class Manager : MonoBehaviour
     void Update()
     {
         if(catUI.activeSelf == true) {
-            //updateInventory(currCat.GetComponent<Cat>());
+            updateInventory(currCat.GetComponent<Cat>());
         }
     }
 
@@ -67,9 +68,9 @@ public class Manager : MonoBehaviour
 
     //set up the fish inspector from the slot
     public void displayFishInspector(GameObject slot) {
-        Fish fish = slot.transform.GetChild(1).GetComponent<Fish>();
+        Fish fish = slot.transform.GetChild(1).gameObject.GetComponent<Fish>();
 
-        Debug.Log("displaying " + fish.getName());
+        Debug.Log("displaying " + slot.name);
         fishNameUI.text = fish.getName(); //set the name
         fishInspectorImage.sprite = fish.GetComponent<SpriteRenderer>().sprite; //set the image
 
@@ -80,15 +81,20 @@ public class Manager : MonoBehaviour
         fishInspectorDetails.transform.GetChild(3).GetComponent<Text>().text = "Rarity: " + fish.getRarity();
     }
 
+
+
     //update the inventory so we can see what fish are caught live
     private void updateInventory(Cat cat) {
 
         GameObject[] bucket = cat.getBucket();
 
+        //iterate through the slots, inserting the fish from the cat's bucket
         for(int i = 0; i < bucket.Length; i++) {
 
+            GameObject button = inventory.transform.GetChild(i).gameObject;
             GameObject slot = inventory.transform.GetChild(i).GetChild(0).gameObject;
             if(bucket[i] != null ) {
+                button.GetComponent<Button>().enabled = true;
                 slot.SetActive(true);
                 slot.GetComponent<Image>().sprite = bucket[i].GetComponent<SpriteRenderer>().sprite; //set the icon picture
 
@@ -98,15 +104,18 @@ public class Manager : MonoBehaviour
                 fishComponent.GetComponent<SpriteRenderer>().sprite = bucket[i].GetComponent<SpriteRenderer>().sprite; //set the sprite
             } else {
                 slot.SetActive(false);
+                button.GetComponent<Button>().enabled = false;
             }
         } //for
     }
 
+    
     public void disableCatUI() {
         catUI.SetActive(false);
     }
 
 
+    //used for debugging
     public void buttonTest() {
         Debug.Log("Test was successful");
     }

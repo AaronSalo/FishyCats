@@ -14,41 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Prefabs/Fish/Carp.prefab
-    - Assets/Prefabs/Fish/Carp.prefab.meta
-    - Assets/Prefabs/Fish/Cod.prefab
-    - Assets/Prefabs/Fish/Cod.prefab.meta
-    - Assets/Prefabs/Fish/Oarfish.prefab
-    - Assets/Prefabs/Fish/Oarfish.prefab.meta
-    - Assets/Prefabs/Fish/Pike.prefab
-    - Assets/Prefabs/Fish/Pike.prefab.meta
-    - Assets/Prefabs/Fish/Pupfish.prefab
-    - Assets/Prefabs/Fish/Pupfish.prefab.meta
-    - Assets/Prefabs/Fish/Rainbow Trout.prefab
-    - Assets/Prefabs/Fish/Rainbow Trout.prefab.meta
-    - Assets/Prefabs/Fish/Trout.prefab
-    - Assets/Prefabs/Slot.prefab
-    - Assets/Prefabs/Slot.prefab.meta
-    - Assets/Scenes/SampleScene.unity
-    - Assets/Scripts/Barrel.cs
-    - Assets/Scripts/Cat.cs
-    - Assets/Scripts/Fish.cs
-    - Assets/Scripts/Manager.cs
-    - Assets/Sprites/Fish Sprites.meta
-    - Assets/Sprites/Fish Sprites/cod.jpg
-    - Assets/Sprites/Fish Sprites/cod.jpg.meta
-    - Assets/Sprites/Fish Sprites/oarfish.jpg
-    - Assets/Sprites/Fish Sprites/oarfish.jpg.meta
-    - Assets/Sprites/Fish Sprites/pike.jpg
-    - Assets/Sprites/Fish Sprites/pike.jpg.meta
-    - Assets/Sprites/Fish Sprites/trout.jpg
-    - Assets/Sprites/Fish Sprites/trout.jpg.meta
-    - Packages/manifest.json
-    - ProjectSettings/ProjectSettings.asset
-    - ProjectSettings/ProjectVersion.txt
     - 
-    m_Values: 000000000000000000000000000000000000000000000000000000000000000000
-  RevisionSummary: 
+    m_Values: 01
+  RevisionSummary: Inventory + fish inspector works fully
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
