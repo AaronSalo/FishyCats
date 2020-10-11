@@ -8,7 +8,10 @@ Some of the project goals are;
 
 
 This project is currently in early beta. A large portion of the features have already been completed, although there are a few more things we want to add.
-To try an early build, download the FishyCats Beta folder and run the exe!
+
+#To try# an early build, download the FishyCats Beta folder and run the exe! Included is a Windows build of the project.
+
+#To play# click/tap anywhere on the screen to help your cat catch fish faster. Sell fish at the market, and use the money to buy upgrades so you can catch more fish, and make more money!
 
 Programming by Aaron Salo
 Art by Riley O'Neail, (and a bit by Aaron Salo)
