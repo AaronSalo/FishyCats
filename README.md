@@ -4,7 +4,7 @@ Fishy Cats is a casual mobile game, in which a cat catches fish! By selling thes
 Some of the project goals are; 
 - to get a strong understanding of how UI works and interacts with other pieces in software,
 - to create an interesting and polished project, 
-- understand how to create scalable systems with lots of moving parts.
+- practice building scalable systems with lots of moving parts.
 
 
 This project is currently in early beta. A large portion of the features have already been completed, although there are a few more things we want to add.
