@@ -14,4 +14,5 @@ This project is currently in early beta. A large portion of the features have al
 **To play** click/tap anywhere on the screen to help your cat catch fish faster. Sell fish at the market, and use the money to buy upgrades so you can catch more fish, and make more money!
 
 Programming by Aaron Salo
+
 Art by Riley O'Neail, (and a bit by Aaron Salo)
