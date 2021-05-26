@@ -6,8 +6,12 @@ Some of the project goals are;
 - to create an interesting and polished project, 
 - practice building scalable systems with lots of moving parts.
 
+![Main screen gif](Animation.gif)
 
 This project is currently in early beta. A large portion of the features have already been completed, although there are a few more things we want to add.
+
+
+- Screenshot of the inventory
 
 
 > **To try** an early build, download the latest release and run the exe! Included is a Windows build of the project, but the final version is intended for Android and iOS 
