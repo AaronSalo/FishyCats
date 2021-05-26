@@ -10,7 +10,7 @@ Some of the project goals are;
 
 This project is currently in early beta. A large portion of the features have already been completed, although there are a few more things we want to add.
 
-
+![Main screen gif](InventoryScreenshot.gif)
 - Screenshot of the inventory
 
 
